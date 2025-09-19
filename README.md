@@ -18,8 +18,7 @@ The system analyzes financial documents like Tesla's Q2 2025 financial update.
 2. Save it as `data/sample.pdf` in the project directory
 3. Or upload any financial PDF through the API endpoint
 
-**Note:** Current `data/sample.pdf` is a placeholder - replace with actual Tesla financial document for proper testing.
-
+CHANGES
 Fixed main.py by adding PDF file validation, handling empty queries, and properly passing inputs to the Crew pipeline.
 Combined outputs from multiple agents into a readable format.
 Added fallback error handling to save results even if Crew processing fails
@@ -29,3 +28,7 @@ These changes make the Crew pipeline run smoothly with all agents.
 Fixed tools.py by converting async methods to synchronous _run methods for reliable Crew integration.
 Replaced PDF reading logic with PyPDFLoader, added file existence checks, and improved text cleanup.
 Enhanced Investment and Risk tools to return clear, formatted, actionable outputs instead of placeholders.
+Fixed task.py by using sync-compatible tools and assigning each task to the correct agent.
+Structured task descriptions and expected outputs for meaningful financial analysis, investment insights, and risk assessment.
+Added task dependencies to ensure sequential Crew execution and proper data flow between verification, analysis, investment, and risk tasks.
+and added mongodb basic structure for retreiving the results .
