@@ -1,5 +1,4 @@
 # Financial Document Analyzer - Debug Assignment
-
 ## Project Overview
 A comprehensive financial document analysis system that processes corporate reports, financial statements, and investment documents using AI-powered analysis agents.
 
@@ -9,7 +8,6 @@ A comprehensive financial document analysis system that processes corporate repo
 ```sh
 pip install -r requirement.txt
 ```
-
 ### Sample Document
 The system analyzes financial documents like Tesla's Q2 2025 financial update.
 
@@ -17,6 +15,20 @@ The system analyzes financial documents like Tesla's Q2 2025 financial update.
 1. Download the Tesla Q2 2025 update from: https://www.tesla.com/sites/default/files/downloads/TSLA-Q2-2025-Update.pdf
 2. Save it as `data/sample.pdf` in the project directory
 3. Or upload any financial PDF through the API endpoint
+SETUP:
+git clone https://github.com/krishnaaap/financial-document-analyzer.git
+cd financial-document-analyzer
+python -m venv venv
+# Activate venv
+pip install -r requirements.txt
+API
+
+GET / → Health check
+
+POST /analyze → Upload PDF + query → Get analysis
+
+GET /results → Previous analyses
+
 
 CHANGES:
 Fixed main.py by adding PDF file validation, handling empty queries, and properly passing inputs to the Crew pipeline.
