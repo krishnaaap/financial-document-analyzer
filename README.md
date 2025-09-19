@@ -20,19 +20,6 @@ The system analyzes financial documents like Tesla's Q2 2025 financial update.
 
 **Note:** Current `data/sample.pdf` is a placeholder - replace with actual Tesla financial document for proper testing.
 
-# You're All Not Set!
-🐛 **Debug Mode Activated!** The project has bugs waiting to be squashed - your mission is to fix them and bring it to life.
-
-## Debugging Instructions
-
-1. **Identify the Bug**: Carefully read the code in each file and understand the expected behavior. There is a bug in each line of code. So be careful.
-2. **Fix the Bug**: Implement the necessary changes to fix the bug.
-3. **Test the Fix**: Run the project and verify that the bug is resolved.
-4. **Repeat**: Continue this process until all bugs are fixed.
-
-## Expected Features
-- Upload financial documents (PDF format)
-- AI-powered financial analysis
-- Investment recommendations
-- Risk assessment
-- Market insights
+Fixed main.py by adding PDF file validation, handling empty queries, and properly passing inputs to the Crew pipeline.
+Combined outputs from multiple agents into a readable format.
+Added fallback error handling to save results even if Crew processing fails
