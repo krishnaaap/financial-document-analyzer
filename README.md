@@ -23,3 +23,6 @@ The system analyzes financial documents like Tesla's Q2 2025 financial update.
 Fixed main.py by adding PDF file validation, handling empty queries, and properly passing inputs to the Crew pipeline.
 Combined outputs from multiple agents into a readable format.
 Added fallback error handling to save results even if Crew processing fails
+Fixed agents.py by properly initializing the LLM with Groq, correcting tool assignments for all agents, and updating backstories, goals, and execution settings for professional behavior.
+Removed placeholder/fake values and ensured memory, max_rpm, and delegation flags were set correctly.
+These changes make the Crew pipeline run smoothly with all agents.
